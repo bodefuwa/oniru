@@ -8,6 +8,9 @@ Bundler.require(*Rails.groups)
 
 module Oniru
   class Application < Rails::Application
+    # Set translator backend for I18n
+    require "Oniru"
+    config.i18n.backend = Oniru::Backend.new
     # Settings in config/environments/* take precedence over those specified here.
     # Application configuration should go into files in config/initializers
     # -- all .rb files in that directory are automatically loaded.

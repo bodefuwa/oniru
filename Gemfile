@@ -41,5 +41,11 @@ group :development, :test do
 
   # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
   gem 'spring'
+
+  gem 'capybara', '~> 2.4.4'
 end
+
+gem 'redis', '~> 3.2.1'
+gem 'haml', '~> 4.0.6'
+gem 'sinatra', '~> 1.4.6', require: 'sinatra/base'
 
